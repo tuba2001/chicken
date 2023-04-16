@@ -1,3 +1,4 @@
+
 .panda-bg-info{
     background-color: #b5595e;
 }
@@ -124,34 +125,6 @@ main {
     gap: 30px;
 }
 
-.manu-btn {
-    width: 352px;
-    height: 364px;
-    background: #FFFFFF;
-    text-align: center;
-    line-height: 64px;
-    border-radius: 5px;
-}
-
-.manu-btn:hover {
-    box-shadow: 1px 1px 10px white;
-}
-
-.active-btn {
-    background: #DD0000;
-}
-
-.manu-btn a {
-    font-size: 20px;
-    display: block;
-    text-decoration: none;
-    color: #161616;
-    font-weight: 600;
-}
-
-.active-link {
-    color: #FFFFFF !important;
-}
 
 /* ----blogs style-----  */
 

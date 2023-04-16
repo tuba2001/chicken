@@ -1,4 +1,152 @@
-
+.menu {
+    width: 80%;
+    margin: auto;
+  }
+  header {
+    background: rgb(2, 133, 245);
+  }
+  header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  nav {
+    float: right;
+  }
+  nav ul {
+    margin: 15px;
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 20px;
+  }
+  nav a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  nav a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+  /*klghfdlg*/
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+  p {
+    padding-bottom: 50px;
+  }
+  .skip {
+    color: rgb(2, 133, 245);
+  }
+  .flex {
+    display: flex;
+    margin-bottom: auto;
+  }
+  .half-wid {
+    width: 50%;
+    padding: 5%;
+  }
+  .half-wid img {
+    width: 80%;
+  }
+  .order-button {
+    text-decoration: none;
+    background-image: linear-gradient(
+      to right,
+      rgb(98, 0, 255),
+      rgb(0, 124, 128)
+    );
+    padding: 10px 40px;
+    color: white;
+    column-width: 700px;
+    border-radius: 200px;
+  }
+  
+  .second-section {
+    display: flex;
+    margin-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(images/shapes/Frame\ 57.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .half-wid-2 img {
+    width: 104%;
+  }
+  
+  .recipi {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .all-food {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .food img {
+    width: 100%;
+  }
+  .food {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 40px #c9c9c9;
+    margin: 100px;
+  }
+  
+  .subscriber {
+    border: 100px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px #c9c9c9;
+    margin: 50px;
+  }
+  .sub {
+    margin: 2%;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  footer {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #0b0d17;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .order {
+    border: 100px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px #c9c9c9;
+    margin: 50px;
+  }
+  .ord-button {
+    padding-top: 150px;
+    padding-left: 200px;
+  }
 
   .bz-light-red {
     background-color: rgba(255, 0, 0, 0.336);
