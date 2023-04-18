@@ -37,222 +37,171 @@
         <img class="ball2" src="" alt="" />
       </div>
       <!-- top banner section end -->
+      
+     
+     
+      <!DOCTYPE html>
+<html>
+	<head>
 
-      <!-- match section start -->
-      <section class="match-container">
-        <div class="side-manu match-manu-color">
-          <div class="manu-btn match-active-btn">
-            <a class="active-link" href="match.html">কুক্কুরুক্কু জাদুকরী রেসিপি</a>
-          </div>
-          <div class="manu-btn"><a href="fashion.html">কুক্কুরুক্কু ফ্যাশন</a></div>
-          <div class="manu-btn"><a href="binodon.html">কুক্কুরুক্কু বিনোদন</a></div>
-        </div>
-        
-      <!-- bolg section end -->
-    </main>
-    
-      <link rel="icon" type="image/png" href="images/favicon.png">
-    </head>
-    <body>
-      <main role="main" id="main">
-          <header>
-              <nav class="navbar">
-                  <div class="container">
-                    <div class="row">
-                        <div class="eight columns">
-                            <a class="brand" tabindex="0" title="The Hungry Recipes">The Hungry Recipes</a>
-                          </div>
-                          <div class="four columns">
-                            <ul class="navbar-list">
-                              <li class="navbar-item"><a class="navbar-link btnRandomRecipe clear-field" tabindex="0" href="#random" title="Show a random recipe">Random</a></li>                       
-                              <li class="navbar-item"><a class="navbar-link" tabindex="0" href="#about-section">About</a></li>
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                </nav>
-          </header>
-          
-    <div class="back"><a href="#main" tabindex="-1"><img src="images/scroll.svg" title="Back to top" /></a></div>
-    
-    
-          <section id="landing">
-              <div class="container">
-                  <div class="row">
-                      <div class="twelve columns">
-                        <div class="row d-flex">
-                          <div class="four columns" style="align-self:center;">
-                            <h1 class="heading">The Hungry Recipes</h1>
-                          </div>
-                          <div class="eight columns">
-                            <div class="row">
-                              <div class="eight columns">
-                                  <h4>Confused what to cook? <br/>
-                                    <small>Search a recipe or try a random recipe!</small>
-                                  </h4>
-                              </div>
-                              <div class="four columns">
-                                  <img src="images/chef.svg" class="u-max-full-width chefimg" />
-                                  <a class="button btnRandomRecipe" href="#random" title="Show a random recipe" onclick="clear()">Random Recipe</a>
-                              </div>
-                            </div>
-      
-                            <div class="row">
-                              <div class="eight columns">
-                                <input class="u-full-width" type="text" placeholder="Search recipes" id="searchRecipe" />
-                              </div>
-                              <div class="four columns" style="position:relative;" id="randomMealBtnContainer">
-                                  <a class="button btnSearchRecipe" href="#mealCardsSection" title="Search">Search Recipe</a>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="eight columns">
-                                <ul class="navbar-list u-full-width" style="text-align:center;" id="NavBarCategory">
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-          </section>
-    
-          <section id="mealCardsSection">
-            <br/>
-            <div class="container" style="display:none;">
-                <div class="row">
-                    <div class="four columns">
-                      <h3 class="heading">The Recipes You Wanted</h3> <br/>
-                    </div>
-                    <div class="row">
-                      <div class="eight columns">
-                        <div class="row">
-                          <div class="eight columns" style="text-align:center;font-size:20px">
-                            <p>You searched for: <span id="userInput"></span></p>
-                          </div>
-                          <div class="four columns" style="text-align:right">
-                            <img src="images/chef.svg" class="u-max-full-width chefimg" alt="Chef icon" />
-                            <a href="#landing" class="button">Search again?</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="row mealCards d-flex"><div class="loader"></div></div>
-            </div>
-          </section>
-          
-          <section id="random">
-            <br/>
-            <div class="container">
-              <div class="row">
-                  <div class="four columns">
-                    <h3 class="heading" id="dynamicTitle">The Random Recipe</h3> <br/>
-                  </div>
-                  <div class="eight columns" style="text-align:right;">
-                    <br/>
-                    <a id="searchAgainBtn" class="button btnRandomRecipe" href="#landing" title="Searh again" style="margin-right:10px">Search again</a>
-    
-                    <img src="images/chef.svg" class="u-max-full-width chefimg" alt="Chef icon" />
-                    <button id="dynamicButton" class="button btnRandomRecipe" title="Show another random recipe">Randomize</button>
-                  </div> 
-              </div>
-              <div class="row">
-                <div class="four columns mealImg" id="randomMealImg"><div class="loader"></div></div>
-                <div class="eight columns mealMetadata" id=randomMealMetadata></div>
-              </div>
-              <div class="row">
-                <div class="twelve columns mealInstructions" id="randomMealInstructions"></div>
-              </div>
-            </div>
-          </section>
-          
-          <section id="about-section">
-            <div class="container">
-                <div class="row">
-                    <div class="twelve columns">
-                      <div class="row d-flex">
-                        <div class="four columns" style="align-self:center;">
-                          <h1 class="heading">About The Hungry Recipes</h1>
-                        </div>
-                        <div class="eight columns">
-                          <p>
-                            "The Hungry Recipes" is powered by the free API provided by 
-                            <a href="https://www.themealdb.com/" target="_blank" title="TheMealDB.com">TheMealDB</a>, 
-                            an open source database of recipes from around the world.
-                          </p>
-                          <p>
-                            This web application uses HTML for structure, CSS for styles and JavaScript for dynamic content.
-                            It allows users to either search TheMealDB for specific recipes or returns a random recipe to get some inspiration.
-                            <br/>
-                            <br/>This project is open source and is contributed to by amazing people. Thank you!
-                            <br/>Github repo - <a href="https://github.com/NitinNair89/TheHungryRecipes" title="The Hungry Recipes on Github" target="_blank">https://github.com/NitinNair89/TheHungryRecipes</a>
-                          </p>
-                          <p>
-                              <img src="https://img.shields.io/github/license/NitinNair89/TheHungryRecipes" alt="GitHub License">
-                              <img src="https://img.shields.io/github/issues/NitinNair89/TheHungryRecipes" alt="GitHub Issues">
-                              <img src="https://img.shields.io/github/stars/NitinNair89/TheHungryRecipes" alt="GitHub Stars">
-                              <img src="https://img.shields.io/github/forks/NitinNair89/TheHungryRecipes" alt="GitHub Forks">
-                              <img src="https://img.shields.io/github/contributors/NitinNair89/TheHungryRecipes" alt="GitHub Contributors">
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-          </section>
-    
-        <footer>
-            <div>
-              Icons by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> <br/>
-              from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            </div>
-      
-    
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="match.js"></script>
-    
-    <!-- footer section start -->
-    <footer class="match-footer">
-      <h2>Goal</h2>
-      <hr />
-      <ul>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Privacy Settings</a></li>
-        <li><a href="#">Goal App</a></li>
-        <li><a href="#">Goal Live</a></li>
+		<title>Christopher De La Cruz</title>
+		
+	</head>
+
+	<style>
+body {
+  background-image: url('https://github.com/cdc17/HTML/blob/main/back.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<font face = "Century Gothic">	
+
+
+<font size="5">
+		<center>
+		<h1 style="background-color:#F8DDA9;"> <ul>Escabeche Recipe - Filipino Sweet & Sour Fish</h1> 
+		</center>
+</font>
+	<font size="4">
+	<font face = "Century Gothic">
+<ul>
+<hr>
+
+	<i>
+		<h2> <u style="background-color:#B6DCB6;">Description </h2> </u>
+	</i>
+<hr>
+</ul>
+
+		<b>
+		<p><ul>Escabeche is a dish which is typically made from fish or meat that is marinated<br>and/or cooked in vinegar and some spices.
+		It is a common dish in Spain and<br> other Mediterranean countries but also common in Portugal and France.<br>
+		But the word escabeche actually has a Persian origin.<br><br>
+		In the Philippines, however, it refers specifically to sweet and sour fish, wherein<br> the fish is first fried and then soaked or marinated in the sweet and sour sauce.
+		</p>
+
+		<br>
+
+		</b>
+	
+		<img border="5" src="https://github.com/cdc17/HTML/blob/main/escabeche.jpg?raw=true" width="900" height="600" alt="Escabeche1" > 
+	</center>
+<font size="4">
+		<ul>
+		<b>
+			<li>PREPERATION TIME : 16 min
+			<li>COOK TIME: 16 mins
+			<li>TOTAL TIME 32 mins
+			</li>
+		</b>
+		</ul>
+</font>
+
+<hr>
+<i>
+	<h2> <u style="background-color:#D2E9E1;">Ingredients</h2> </u>
+</i>
+		<hr>
+		<ul>
+		<b>
+      		<li> 1 whole Tilapia - at least a pound
+      		<li> 3 tablespoons sugar
+      		<li> ⅓ cup vinegar
+      		<li> 1 tablespoon cornstarch - dissolved in ½ cup water
+      		<li> ½ cup red bell pepper - cut into strips
+      		<li> ½ cup green bell pepper - cut into strips
+      		<li> ½ cup carrots - cut into strips
+      		<li> ¼ cup ginger - cut into strips
+      		<li> 1 onion - sliced
+      		<li> 3 cloves garlic - minced
+      		<li> ½ cup cooking oil for frying
+      		<li> 2 tablespoons cooking oil
+      		<li> 1 teaspoon salt for seasoning fish
+      		<li> Salt and pepper
+      		<li> 2 tablespoons ketchup - optional, for coloring
+      		<br>
+      	</b>	
+    	</ul>
+<hr>
+    	
+<i>
+	<h2> <u style="background-color:#FCB6D0;">Instructions</h2></u>
+	<hr>
+</i>
+	<ol>
+<b>
+	<li><h4>First Step</h4>Season fish with salt. Heat oil in a frying pan and once oil is hot, fry fish one side of at a time until<br> golden brown. Remove fish from pan and place it on a serving plate.
+
+	<li><h4>Second Step</h4>In a saucepan, saute garlic, ginger, and onion in 2 tablespoon oil. Add carrots and bell peppers.<br> Pour in vinegar and dissolved cornstarch and add sugar and ketchup.  Add salt and pepper to taste.<br> Let it simmer until sauce thickens while stirring occasionally.
+
+	<li><h4>Final Step</h4>Pour sauce into the fried fish and serve.</p>
+	
+	</ol>
+</b>
+
+	<hr>
+<i>
+	<h2> <u style="background-color:#FBEDC9;">Nutrients </h2></u>
+</i>
+	<hr>
+
+	<b>
+	<ul>
+      <li> Calories: 720kcal
+      <li> Carbohydrates: 37g
+      <li> Protein: 2g
+      <li> Fat: 63g 
+      <li> Saturated Fat: 4g
+      <li> Cholesterol: 0mg
+      <li> Sodium: 1193mg
+      <li> Potassium: 394mg
+      <li> Fiber: 3g
+      <li> Sugar: 24g
+      <li> Vitamin A: 6650IU
+      <li> Vitamin C: 85.5mg
+      <li> Calcium: 31mg
+      <li> Iron: 0.5mg
       </ul>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/indrajithCSE" target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/indrajithgoswami/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/channel/UCm9IQE-aF3NzxEcfWDmF0oA"
-            target="_blank"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/IndrajithCSE" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
+     </b>
+    <hr>
+<i>
+   		<h1 style="background-color:#FFDEE1;">Enjoy the Escabeche Recipe - Filipino Sweet & Sour Fish</h1>
+</i>
+   	<hr>
+		<img border="4" src="https://www.foxyfolksy.com/wp-content/uploads/2018/06/escabeche-recipe.jpg" alt="Escabeche2" width="475" height="570">
+    	<img border="4" src="https://www.foxyfolksy.com/wp-content/uploads/2018/06/filipino-fish-escabeche.jpg" alt="Escabeche3" width="485" height="600">
+    	<img border="4" src="https://www.foxyfolksy.com/wp-content/uploads/2018/06/escabeche-fish.jpg" alt="Escabeche4" width="490" height="630">
+   	
+    <br>
+
+
+
+
+<hr>
+	<center>
+		<address style="color:black">
+		Created by Christopher R. De La Cruz<br> 
+		Section : BSIT - 2A<br>
+		Email : christopherdelacruz.dll@gmail.com<br>
+		</address>
+		<img border="0" src="https://github.com/cdc17/HTML/blob/main/me.jpg?raw=true" alt="me" width="250" height="250">
+<hr>
+	</center>
+</font>
+
+	</body>
+
+</html>
+
+<!--Christopher R. De La Cruz    BSIT - 2A -->
+
+
+
+
+      
     <!-- footer section end -->
   </body>
 </html>
